@@ -8,7 +8,7 @@ button {
   background: #3882f6;
   border-radius: 8px;
   color: white;
-  padding: 8px 24px;
+  padding: 8px 35px;
   font-size: large;
 }
 
@@ -21,10 +21,8 @@ li {
   list-style: none;
 }
 header, 
-  .info-boxes, 
-    .quotes, 
-      .call-to-action, 
-        footer {
+  .info-boxes,
+      .call-to-action {
           padding: 1em 13em;
         }
 
@@ -42,6 +40,8 @@ header{
 }
 
 ul {
+  margin: 0;
+  padding: 0;
   display: flex;
   gap: 16px;
 }
@@ -73,6 +73,7 @@ ul {
   padding: 0;
   font-size: 18px;
   color: #e5e7eb;
+  margin-bottom: 10px;
 }
 
 .hero-image {
@@ -91,21 +92,31 @@ ul {
 
 /*** Info Boxes ***/
 .info-boxes {
-
+  text-align: center;
+  margin-bottom: 80px;
 }
 
+.info-boxes > h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  margin-bottom: 50px;
+}
 .box-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 40px;
 }
 
-/* .box {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-} */
+.box > p {
+  margin: 0;
+  width: 160px;
+  color: #1f2937b3;
+  
+}
 
 .image {
+  margin-bottom: 5px;
   border: 3px solid #3882f6;
   border-radius: 20px;
   width: 150px;
@@ -114,30 +125,65 @@ ul {
 
 /**** Quotes ***/
 .quotes {
-  background: #e5e7eb;
-  
+  background-color: #e5e7eb;
+  padding: 100px 13em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 blockquote {
   font-size: 36px;
   font-style: italic;
+  font-weight: 200;
   color: #1F2937;
+  width: 80%;
+  margin: 0;
 }
 figcaption {
+  font-size: larger;
   font-weight: bold;
+  margin: 10px 100px 0 auto;
 }
 
 /*** Call to action ***/
-.propmt-box {
-  background: #3882f6;
+.call-to-action {
+  padding: 100px 13em;
 }
 
+.propmt-box {
+  background: #3882f6;
+  border: 2px solid #3882f6;
+  border-radius: 10px;
+  display: flex;
+  height: 150px;
+  align-items: center;
+  justify-content: space-around;
+  color: #f9faf8;
+  font-size: larger;
+}
+
+/* .inside-box {
+  display: flex;
+  justify-content: space-around;
+} */
+
+.call-to-action h3, p {
+  padding: 0;
+  margin: 0;
+}
 #action-btn {
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 /*** Footer ***/
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #1F2937;
   color: #f9faf8;
+  font-size: larger;
+  padding: 40px 13em;
 }
